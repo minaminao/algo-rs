@@ -24,6 +24,7 @@ $ cargo test
 <!-- ## Machine Learning  -->
 
 ## Number Theory 
+- [Divisors](src/number_theory/divisors.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
 
 <!-- ## Numerical Analysis -->
