@@ -6,7 +6,8 @@ Implementations of algorithms and data structures, code snippets, etc.
 $ cargo test
 ```
 
-## Data Structures
+## Support Algorithms
+### Data Structures
 - [Binary Indexed Tree](src/data_structures/binary_indexed_tree.rs)
 - [Union–Find](src/data_structures/union_find.rs)
 
@@ -14,27 +15,27 @@ $ cargo test
 
 <!-- ## Geometry -->
 
-## Graph Theory
+### Graph Theory
 - [Dijkstra's algorithm](src/graph_theory/dijkstra.rs)
 
-<!-- ## Greedy -->
+<!-- ### Greedy -->
 
-<!-- ## Linear Algebra -->
+<!-- ### Linear Algebra -->
 
-<!-- ## Machine Learning  -->
+<!-- ### Machine Learning  -->
 
-## Number Theory 
+### Number Theory 
 - [Divisors](src/number_theory/divisors.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
 
-<!-- ## Numerical Analysis -->
+<!-- ### Numerical Analysis -->
 
-<!-- ## Quantum -->
+<!-- ### Quantum -->
 
-<!-- ## Signal Processing -->
+<!-- ### Signal Processing -->
 
-<!-- ## Sort -->
+<!-- ### Sort -->
 
-<!-- ## String -->
+<!-- ### String -->
 
-<!-- ## Others -->
+<!-- ### Misc -->
