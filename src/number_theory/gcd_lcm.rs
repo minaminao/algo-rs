@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 fn gcd(x: u64, y: u64) -> u64 {
     if y > 0 {
         gcd(y, x % y)
