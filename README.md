@@ -1,13 +1,10 @@
 # Algorithms and Data Structures in Rust
 Implementations of algorithms and data structures, code snippets, etc.
 
-## Test
-```
-$ cargo test
-```
-
-## Support Algorithms
+## List
 ### Data Structures
+- Basic
+  - [Stack](src/data_structures/stack.rs)
 - [Binary Indexed Tree](src/data_structures/binary_indexed_tree.rs)
 - [Union–Find](src/data_structures/union_find.rs)
 
