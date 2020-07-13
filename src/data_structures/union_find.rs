@@ -1,20 +1,20 @@
 #![allow(dead_code)]
 
 // Verified: https://atcoder.jp/contests/atc001/submissions/7948320
-struct UnionFind {
+pub struct UnionFind {
     parent: Vec<i32>,
     size: usize,
 }
 
 impl UnionFind {
-    fn new(n: usize) -> UnionFind {
+    pub fn new(n: usize) -> UnionFind {
         UnionFind {
             parent: vec![-1; n],
             size: n,
         }
     }
 
-    fn unite(&mut self, mut x: usize, mut y: usize) -> bool {
+    pub fn unite(&mut self, mut x: usize, mut y: usize) -> bool {
         x = self.root(x);
         y = self.root(y);
         if x == y {
@@ -29,11 +29,11 @@ impl UnionFind {
         true
     }
 
-    fn same(&mut self, x: usize, y: usize) -> bool {
+    pub fn same(&mut self, x: usize, y: usize) -> bool {
         self.root(x) == self.root(y)
     }
 
-    fn root(&mut self, x: usize) -> usize {
+    pub fn root(&mut self, x: usize) -> usize {
         if self.parent[x] < 0 {
             x
         } else {
@@ -43,8 +43,7 @@ impl UnionFind {
         }
     }
 
-    #[allow(dead_code)]
-    fn size_of(&mut self, x: usize) -> i32 {
+    pub fn size_of(&mut self, x: usize) -> i32 {
         let r = self.root(x);
         -self.parent[r]
     }
