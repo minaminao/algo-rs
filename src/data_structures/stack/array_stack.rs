@@ -1,6 +1,7 @@
-use crate::data_structures::interfaces::*;
+use super::*;
 
 pub struct ArrayStack<T> {
+    // If this is Box<[T]>, new() can't initialize `None`
     array: Box<[Option<T>]>,
     len: usize,
 }

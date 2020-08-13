@@ -1,4 +1,4 @@
-use crate::data_structures::interfaces::*;
+use super::*;
 
 pub struct ArrayQueue<T> {
     array: Box<[Option<T>]>,
