@@ -2,32 +2,32 @@ use crate::data_structures::interfaces::*;
 
 pub struct ArrayStack<T> {
     array: Box<[Option<T>]>,
-    n: usize,
+    len: usize,
 }
 
 impl<T: Clone> ArrayStack<T> {
     pub fn new(n: usize) -> Self {
         Self {
             array: vec![None; n].into_boxed_slice(),
-            n: 0,
+            len: 0,
         }
     }
 }
 
 impl<T: Clone> Stack<T> for ArrayStack<T> {
     fn len(&self) -> usize {
-        self.n
+        self.len
     }
     fn get(&self, i: usize) -> T {
         self.array.get(i).unwrap().clone().unwrap()
     }
     fn push(&mut self, x: T) {
-        *self.array.get_mut(self.n).unwrap() = Some(x);
-        self.n += 1;
+        *self.array.get_mut(self.len).unwrap() = Some(x);
+        self.len += 1;
     }
     fn pop(&mut self) -> T {
-        self.n -= 1;
-        self.array.get(self.n).unwrap().clone().unwrap()
+        self.len -= 1;
+        self.array.get(self.len).unwrap().clone().unwrap()
     }
 }
 

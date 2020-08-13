@@ -5,6 +5,7 @@ Implementations of algorithms and data structures, code snippets, etc.
 ### Data Structures
 - Basic
   - [Stack](src/data_structures/stack.rs)
+  - [Queue](src/data_structures/queue.rs)
 - [Binary Indexed Tree](src/data_structures/binary_indexed_tree.rs)
 - [Union–Find](src/data_structures/union_find.rs)
 
