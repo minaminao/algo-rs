@@ -8,6 +8,7 @@ Implementations of algorithms and data structures, code snippets, etc.
 - [Queue](src/data_structures/queue/mod.rs)
   - [Array Queue](src/data_structures/queue/array_queue.rs)
 - [Deque](src/data_structures/deque/mod.rs)
+  - [Array Deque](src/data_structures/deque/array_deque.rs)
 - [List](src/data_structures/list/mod.rs)
 - [Binary Indexed Tree](src/data_structures/binary_indexed_tree.rs)
 - [Union–Find](src/data_structures/union_find.rs)

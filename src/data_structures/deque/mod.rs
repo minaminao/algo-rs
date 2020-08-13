@@ -1,3 +1,5 @@
+pub mod array_deque;
+
 pub trait Deque<T: Clone> {
     fn len(&self) -> usize;
     fn get(&self, i: usize) -> T;
