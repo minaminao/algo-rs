@@ -46,3 +46,16 @@ pub fn miller_rabin_primality_test(n: T, iteration: Option<usize>) -> bool {
     }
     true
 }
+
+#[test]
+fn test() {
+    assert_eq!(miller_rabin_primality_test(1, None), false);
+    assert_eq!(miller_rabin_primality_test(2, None), true);
+    assert_eq!(miller_rabin_primality_test(3, None), true);
+    assert_eq!(miller_rabin_primality_test(4, None), false);
+    assert_eq!(miller_rabin_primality_test(5, None), true);
+    assert_eq!(miller_rabin_primality_test(6, None), false);
+    assert_eq!(miller_rabin_primality_test(7, None), true);
+    assert_eq!(miller_rabin_primality_test(8, None), false);
+    assert_eq!(miller_rabin_primality_test(9, None), false);
+}
