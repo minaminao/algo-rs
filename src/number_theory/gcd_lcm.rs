@@ -1,7 +1,5 @@
-#![allow(dead_code)]
-
 /// Greatest common divisor
-fn gcd(x: u64, y: u64) -> u64 {
+pub fn gcd(x: u64, y: u64) -> u64 {
     if y > 0 {
         gcd(y, x % y)
     } else {
@@ -10,7 +8,7 @@ fn gcd(x: u64, y: u64) -> u64 {
 }
 
 /// Least common multiple
-fn lcm(x: u64, y: u64) -> u64 {
+pub fn lcm(x: u64, y: u64) -> u64 {
     x / gcd(x, y) * y
 }
 
