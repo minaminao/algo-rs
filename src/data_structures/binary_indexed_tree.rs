@@ -11,7 +11,7 @@ impl BinaryIndexedTree {
     fn new(n: usize) -> BinaryIndexedTree {
         let mut p = 1;
         while p < n {
-            p = p << 1;
+            p <<= 1;
         }
         BinaryIndexedTree {
             n,
@@ -23,7 +23,7 @@ impl BinaryIndexedTree {
     fn add(&mut self, i: usize, x: isize) {
         let mut i = i as isize;
         while i <= self.n as isize {
-            self.v[i as usize] = self.v[i as usize] + x;
+            self.v[i as usize] += x;
             i += i & -i;
             dbg!(i, -i);
         }
@@ -33,7 +33,7 @@ impl BinaryIndexedTree {
         let mut ret = 0;
         let mut i = i as isize;
         while i > 0 {
-            ret = ret + self.v[i as usize];
+            ret += self.v[i as usize];
             i -= i & -i;
         }
         ret
