@@ -29,6 +29,7 @@ Implementations of algorithms and data structures, code snippets, etc.
 ### Number Theory 
 - [Divisors](src/number_theory/divisors.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
+- [Miller–Rabin primality test](src/number_theory/miller_rabin_primality_test.rs)
 
 <!-- ### Numerical Analysis -->
 
