@@ -5,7 +5,7 @@ pub fn extgcd(a: T, b: T) -> (T, T, T) {
     let mut x = 1;
     let mut y = 0;
     if b != 0 {
-        let (tg, ty, tx) = extgcd(b, a % b);
+        let (tg, tx, ty) = extgcd(b, a % b);
         g = tg;
         x = ty;
         y = tx;
