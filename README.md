@@ -29,6 +29,7 @@ Implementations of algorithms and data structures, code snippets, etc.
 ### Number Theory 
 - [Chinese remainder theorem](src/number_theory/chinese_remainder_theorem.rs)
 - [Divisors](src/number_theory/divisors.rs)
+- [Extended GCD](src/number_theory/extended_gcd.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
 - [Miller–Rabin primality test](src/number_theory/miller_rabin_primality_test.rs)
 
