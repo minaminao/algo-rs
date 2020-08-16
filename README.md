@@ -32,6 +32,8 @@ Implementations of algorithms and data structures, code snippets, etc.
 - [Extended GCD](src/number_theory/extended_gcd.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
 - [Miller–Rabin primality test](src/number_theory/miller_rabin_primality_test.rs)
+- [Modpow](src/number_theory/modpow.rs)
+- [Quadratic Residue](src/number_theory/quadratic_residue.rs)
 
 <!-- ### Numerical Analysis -->
 
