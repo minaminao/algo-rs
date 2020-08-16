@@ -1,6 +1,6 @@
-type T = i128;
+type I = i128;
 
-pub fn extgcd(a: T, b: T) -> (T, T, T) {
+pub fn extgcd(a: I, b: I) -> (I, I, I) {
     let mut g = a;
     let mut x = 1;
     let mut y = 0;
