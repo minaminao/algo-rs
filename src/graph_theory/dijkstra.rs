@@ -1,8 +1,11 @@
+use std::cmp::Reverse;
+use std::collections::BinaryHeap;
+
 const INF_DIST: usize = std::usize::MAX;
 type Graph = Vec<Vec<(usize, usize, usize)>>;
 
 /// Dijkstra's algorithm
-fn dijkstra(g: &Graph, start: usize) -> Vec<usize> {
+pub fn dijkstra(g: &Graph, start: usize) -> Vec<usize> {
     let n = g.len();
     let mut vis = vec![false; n];
     let mut dist = vec![INF_DIST; n];
