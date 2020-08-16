@@ -7,7 +7,7 @@ pub fn gcd(x: u64, y: u64) -> u64 {
     }
 }
 
-/// Least common multiple
+/// Lowest common multiple
 pub fn lcm(x: u64, y: u64) -> u64 {
     x / gcd(x, y) * y
 }
