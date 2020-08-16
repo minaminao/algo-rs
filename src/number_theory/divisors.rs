@@ -1,6 +1,4 @@
-#![allow(dead_code)]
-
-fn get_divisors(x: usize) -> Vec<usize> {
+pub fn get_divisors(x: usize) -> Vec<usize> {
     let mut ret = Vec::new();
     let mut i = 1;
     while i * i < x {
