@@ -22,6 +22,9 @@ impl<T: Clone> Queue<T> for ArrayQueue<T> {
     fn len(&self) -> usize {
         (self.tail + self.n - self.head) % self.n
     }
+    fn is_empty(&self) -> bool {
+        self.len() == 0
+    }
     fn get(&self, i: usize) -> T {
         self.array
             .get((self.head + i) % self.n)

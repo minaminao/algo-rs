@@ -19,6 +19,9 @@ impl<T: Clone> Stack<T> for ArrayStack<T> {
     fn len(&self) -> usize {
         self.len
     }
+    fn is_empty(&self) -> bool {
+        self.len() == 0
+    }
     fn get(&self, i: usize) -> T {
         self.array.get(i).unwrap().clone().unwrap()
     }

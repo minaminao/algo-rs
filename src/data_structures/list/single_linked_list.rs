@@ -28,9 +28,18 @@ impl<T: Clone> SinglyLinkedList<T> {
     }
 }
 
+impl<T: Clone> Default for SinglyLinkedList<T> {
+    fn default() -> Self {
+        Self::new()
+    }
+}
+
 impl<T: Clone> List<T> for SinglyLinkedList<T> {
     fn len(&self) -> usize {
         self.n
+    }
+    fn is_empty(&self) -> bool {
+        self.len() == 0
     }
     fn get(&self, i: usize) -> T {
         let mut node = self.head.clone();

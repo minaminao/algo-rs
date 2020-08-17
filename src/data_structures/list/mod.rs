@@ -2,6 +2,7 @@ pub mod single_linked_list;
 
 pub trait List<T: Clone> {
     fn len(&self) -> usize;
+    fn is_empty(&self) -> bool;
     fn get(&self, i: usize) -> T;
     fn set(&mut self, i: usize, x: T);
     fn add(&mut self, i: usize, x: T);

@@ -8,11 +8,11 @@ pub struct SparseTable {
 
 impl SparseTable {
     /// O(n log n)
-    pub fn new(a: &Vec<I>) -> Self {
+    pub fn new(a: &[I]) -> Self {
         let n = a.len();
         let lg_n = (n as f64).log2() as usize + 1;
         let mut st = Self {
-            a: a.clone(),
+            a: a.to_owned(),
             mini: vec![vec![0; n]; lg_n],
             lg: vec![0; n + 1],
         };
@@ -31,7 +31,7 @@ impl SparseTable {
     }
     /// O(1) [l, r]
     pub fn query(&self, l: usize, r: usize) -> I {
-        if r - l <= 0 {
+        if r <= l {
             return I::MAX;
         }
         let k = self.lg[r - l];

@@ -49,7 +49,7 @@ pub fn modsqrt(a: U, p: U) -> U {
             break;
         }
     }
-    return r;
+    r
 }
 
 #[test]

@@ -2,7 +2,7 @@ use super::extended_gcd::*;
 
 type I = i128;
 
-pub fn chinese_remainder_theorem(v_a: &Vec<I>, v_n: &Vec<I>) -> (I, I) {
+pub fn chinese_remainder_theorem(v_a: &[I], v_n: &[I]) -> (I, I) {
     assert_eq!(v_a.len(), v_n.len());
     let mut a = 0;
     let mut n = 1;
