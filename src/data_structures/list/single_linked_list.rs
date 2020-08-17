@@ -62,6 +62,7 @@ impl<T: Clone> List<T> for SinglyLinkedList<T> {
             next: node.clone().unwrap().borrow().next.clone(),
         };
         node.unwrap().borrow_mut().next = Some(Rc::new(RefCell::new(new_node)));
+        self.n += 1;
     }
     fn remove(&mut self, i: usize) {
         let mut node = self.head.clone();
@@ -79,6 +80,7 @@ impl<T: Clone> List<T> for SinglyLinkedList<T> {
             .next
             .clone();
         node.unwrap().borrow_mut().next = next_node;
+        self.n -= 1;
     }
 }
 
@@ -98,18 +100,25 @@ fn test() {
     let mut list = SinglyLinkedList::new();
     assert_eq!(list.len(), 0);
     list.add(0, 0);
+    assert_eq!(list.len(), 1);
     assert_eq!(list.get(0), 0);
     list.add(0, 0);
     list.add(0, 1);
     list.add(0, 2);
+    assert_eq!(list.len(), 4);
     assert_eq!(list.get(0), 2);
     assert_eq!(list.get(1), 1);
     assert_eq!(list.get(2), 0);
+    assert_eq!(list.get(3), 0);
     list.set(1, 3);
+    assert_eq!(list.len(), 4);
     assert_eq!(list.get(0), 2);
     assert_eq!(list.get(1), 3);
     assert_eq!(list.get(2), 0);
+    assert_eq!(list.get(3), 0);
     list.remove(1);
+    assert_eq!(list.len(), 3);
     assert_eq!(list.get(0), 2);
     assert_eq!(list.get(1), 0);
+    assert_eq!(list.get(2), 0);
 }
