@@ -10,6 +10,7 @@ Implementations of algorithms and data structures, code snippets, etc.
 - [Deque](src/data_structures/deque/mod.rs)
   - [Array Deque](src/data_structures/deque/array_deque.rs)
 - [List](src/data_structures/list/mod.rs)
+  - [Singly Linked List](src/data_structures/list/single_linked_list.rs)
 - [Binary Indexed Tree](src/data_structures/binary_indexed_tree.rs)
 - [Union–Find](src/data_structures/union_find.rs)
 
