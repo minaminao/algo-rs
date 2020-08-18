@@ -5,6 +5,7 @@ const INF_DIST: usize = std::usize::MAX;
 type Graph = Vec<Vec<(usize, usize, usize)>>;
 
 /// Dijkstra's algorithm
+#[allow(clippy::ptr_arg)]
 pub fn dijkstra(g: &Graph, start: usize) -> Vec<usize> {
     let n = g.len();
     let mut vis = vec![false; n];
