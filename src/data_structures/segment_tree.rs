@@ -1,5 +1,6 @@
+use crate::data_structures::range_minimum_query::*;
+
 type I = i64;
-// TODO: RMQ trait
 
 pub struct SegmentTree {
     n: usize,
@@ -26,8 +27,14 @@ impl SegmentTree {
             j >>= 1;
         }
     }
+    pub fn get(&self, i: usize) -> I {
+        self.d[self.n + i]
+    }
+}
+
+impl RangeMinimumQuery for SegmentTree {
     /// [l, r]
-    pub fn query(&self, mut l: usize, mut r: usize) -> I {
+    fn query(&self, mut l: usize, mut r: usize) -> I {
         let mut mi = self.get(l);
         let bl = (l as isize & -(l as isize)) as usize;
         let br = (r as isize & -(r as isize)) as usize;
@@ -40,9 +47,6 @@ impl SegmentTree {
             r -= br;
         }
         mi
-    }
-    pub fn get(&self, i: usize) -> I {
-        self.d[self.n + i]
     }
 }
 

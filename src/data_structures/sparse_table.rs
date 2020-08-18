@@ -1,3 +1,5 @@
+use crate::data_structures::range_minimum_query::*;
+
 type I = i64;
 
 pub struct SparseTable {
@@ -29,8 +31,11 @@ impl SparseTable {
         });
         st
     }
-    /// O(1) [l, r]
-    pub fn query(&self, l: usize, r: usize) -> I {
+}
+
+impl RangeMinimumQuery for SparseTable {
+    /// O(1) [l, r)
+    fn query(&self, l: usize, r: usize) -> I {
         if r <= l {
             return I::MAX;
         }
