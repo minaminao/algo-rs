@@ -28,15 +28,16 @@
 <!-- ### Linear Algebra -->
 
 ## Number Theory 
+- [Array of Number of Divisors](src/number_theory/number_of_divisors.rs)
 - [Chinese Remainder Theorem](src/number_theory/chinese_remainder_theorem.rs)
 - [Divisors](src/number_theory/divisors.rs)
-- [Sieve of Eratosthenes](src/number_theory/eratos.rs)
+- [Euler's Totient Function](src/number_theory/euler_totient.rs)
 - [Extended GCD](src/number_theory/extended_gcd.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
 - [Miller–Rabin Primality Test](src/number_theory/miller_rabin_primality_test.rs)
-- [Array of Number of Divisors](src/number_theory/number_of_divisors.rs)
 - [Modpow](src/number_theory/modpow.rs)
 - [Quadratic Residue](src/number_theory/quadratic_residue.rs)
+- [Sieve of Eratosthenes](src/number_theory/eratos.rs)
 
 <!-- ### Numerical Analysis -->
 
