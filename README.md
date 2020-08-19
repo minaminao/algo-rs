@@ -33,6 +33,7 @@
 - [Extended GCD](src/number_theory/extended_gcd.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
 - [Miller–Rabin Primality Test](src/number_theory/miller_rabin_primality_test.rs)
+- [Array of Number of Divisors](src/number_theory/number_of_divisors.rs)
 - [Modpow](src/number_theory/modpow.rs)
 - [Quadratic Residue](src/number_theory/quadratic_residue.rs)
 
