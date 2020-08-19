@@ -1,6 +1,6 @@
 # algo-rs - Algorithms and Data Structures in Rust
 
-## Data Structures
+## General Data Structures
 - [Stack (trait)](src/data_structures/stack/mod.rs)
   - [Array Stack](src/data_structures/stack/array_stack.rs)
 - [Queue (trait)](src/data_structures/queue/mod.rs)
@@ -26,8 +26,6 @@
 <!-- ### Greedy -->
 
 <!-- ### Linear Algebra -->
-
-<!-- ### Machine Learning  -->
 
 ## Number Theory 
 - [Chinese Remainder Theorem](src/number_theory/chinese_remainder_theorem.rs)
