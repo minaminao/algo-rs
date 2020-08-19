@@ -6,6 +6,7 @@ pub mod gcd_lcm;
 pub mod legendre_formula;
 pub mod miller_rabin_primality_test;
 pub mod modfloat;
+pub mod modinv;
 pub mod modpow;
 pub mod number_of_divisors;
 pub mod quadratic_residue;

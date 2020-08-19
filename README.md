@@ -38,6 +38,7 @@
 - [Miller–Rabin Primality Test](src/number_theory/miller_rabin_primality_test.rs)
 - [Modpow](src/number_theory/modpow.rs)
 - [Modfloat](src/number_theory/modfloat.rs)
+- [Modinv](src/number_theorymodinv.rs)
 - [Quadratic Residue](src/number_theory/quadratic_residue.rs)
 - [Sieve of Eratosthenes](src/number_theory/eratos.rs)
 
