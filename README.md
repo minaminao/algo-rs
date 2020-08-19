@@ -34,6 +34,7 @@
 - [Euler's Totient Function](src/number_theory/euler_totient.rs)
 - [Extended GCD](src/number_theory/extended_gcd.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
+- [Legendre Formula](src/number_theory/legendre_formula.rs)
 - [Miller–Rabin Primality Test](src/number_theory/miller_rabin_primality_test.rs)
 - [Modpow](src/number_theory/modpow.rs)
 - [Quadratic Residue](src/number_theory/quadratic_residue.rs)
