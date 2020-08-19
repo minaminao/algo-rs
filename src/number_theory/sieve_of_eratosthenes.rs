@@ -14,6 +14,13 @@ pub fn sieve_of_eratosthenes(n: usize) -> Vec<bool> {
     is_prime
 }
 
+/// <= n
+/// O(n log log n)
+pub fn get_primes(n: usize) -> Vec<usize> {
+    let is_prime = sieve_of_eratosthenes(n);
+    (0..=n).filter(|&x| is_prime[x]).collect()
+}
+
 #[test]
 fn test() {
     let v = sieve_of_eratosthenes(10);
@@ -26,4 +33,7 @@ fn test() {
     assert_eq!(v[7], true);
     assert_eq!(v[8], false);
     assert_eq!(v[9], false);
+
+    let primes = get_primes(10);
+    assert_eq!(primes, vec![2, 3, 5, 7]);
 }
