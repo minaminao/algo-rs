@@ -13,6 +13,7 @@ fn legendre(a: U, p: U) -> i128 {
 }
 
 /// Tonelli–Shanks algorithm.
+/// calc x where x^2 = a mod p
 #[allow(clippy::mut_range_bound)]
 pub fn modsqrt(a: U, p: U) -> U {
     let l = legendre(a, p);
