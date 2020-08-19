@@ -6,3 +6,4 @@ pub mod miller_rabin_primality_test;
 pub mod modpow;
 pub mod number_of_divisors;
 pub mod quadratic_residue;
+pub mod sieve_of_eratosthenes;

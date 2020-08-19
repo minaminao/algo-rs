@@ -30,6 +30,7 @@
 ## Number Theory 
 - [Chinese Remainder Theorem](src/number_theory/chinese_remainder_theorem.rs)
 - [Divisors](src/number_theory/divisors.rs)
+- [Sieve of Eratosthenes](src/number_theory/eratos.rs)
 - [Extended GCD](src/number_theory/extended_gcd.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
 - [Miller–Rabin Primality Test](src/number_theory/miller_rabin_primality_test.rs)
