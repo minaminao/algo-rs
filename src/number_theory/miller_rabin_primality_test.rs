@@ -3,6 +3,8 @@ use rand::Rng;
 
 type U = u128;
 
+/// Miller-Rabin primality test.
+/// modmul is late, so it should not be used in this function.
 pub fn miller_rabin_primality_test(n: U, iteration: Option<usize>) -> bool {
     let iteration = iteration.unwrap_or(5);
     if n < 2 {

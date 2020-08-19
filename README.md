@@ -37,6 +37,7 @@
 - [Fibonacci](src/number_theory/fibonacci.rs)
 - [GCD, LCM](src/number_theory/gcd_lcm.rs)
 - [Legendre Formula](src/number_theory/legendre_formula.rs)
+- [Log Factorial](sr/number_theory/log_factorial.rs)
 - [Miller–Rabin Primality Test](src/number_theory/miller_rabin_primality_test.rs)
 - [Modpow](src/number_theory/modpow.rs)
 - [Modfloat](src/number_theory/modfloat.rs)

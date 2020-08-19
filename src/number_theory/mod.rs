@@ -6,6 +6,7 @@ pub mod factorial;
 pub mod fibonacci;
 pub mod gcd_lcm;
 pub mod legendre_formula;
+pub mod log_factorial;
 pub mod miller_rabin_primality_test;
 pub mod modfloat;
 pub mod modinv;
