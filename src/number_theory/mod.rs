@@ -5,6 +5,8 @@ pub mod extended_gcd;
 pub mod factorial;
 pub mod fibonacci;
 pub mod gcd_lcm;
+pub mod generate_prime;
+pub mod is_prime;
 pub mod legendre_formula;
 pub mod log_factorial;
 pub mod miller_rabin_primality_test;
