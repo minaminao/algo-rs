@@ -5,7 +5,7 @@ type U = u128;
 
 pub fn generate_prime(n: usize) -> U {
     let mut rng = rand::thread_rng();
-    let x = rng.gen::<U>() % 1 << (n + 1);
+    let x = rng.gen::<U>() % (1 << (n + 1));
     next_prime(x)
 }
 
