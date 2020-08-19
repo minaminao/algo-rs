@@ -1,4 +1,6 @@
-pub fn get_divisors(x: usize) -> Vec<usize> {
+/// Divisors (Unsorted)
+/// O(√n), O(2^(b/2))
+pub fn calc_divisors(x: usize) -> Vec<usize> {
     let mut ret = Vec::new();
     let mut i = 1;
     while i * i < x {
@@ -18,7 +20,7 @@ pub fn get_divisors(x: usize) -> Vec<usize> {
 
 #[test]
 fn test() {
-    let mut d = get_divisors(10);
+    let mut d = calc_divisors(10);
     d.sort();
     assert_eq!(d, vec![1, 2, 5, 10]);
 }
