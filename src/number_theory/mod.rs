@@ -3,6 +3,7 @@ pub mod divisors;
 pub mod euler_totient;
 pub mod extended_gcd;
 pub mod factorial;
+pub mod fibonacci;
 pub mod gcd_lcm;
 pub mod legendre_formula;
 pub mod miller_rabin_primality_test;
