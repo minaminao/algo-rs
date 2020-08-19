@@ -1,3 +1,4 @@
+/// O(2^(b/2))
 /// O(sqrt n) if the number of bits of n is fixed.
 pub fn is_prime(x: usize) -> bool {
     if x <= 1 {
